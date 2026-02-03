@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'dart:async';
@@ -37,7 +35,7 @@ class _TimerScreenState extends State<TimerScreen> {
   bool isPause = false;
   bool _isResting = true;
   bool _isTimerStarted = false;
-  bool _OnChillMode = true;
+  bool _onChillMode = true;
 
   // background colors
   Color _appBarColor = Color(0xffFFB3CB);
@@ -52,12 +50,12 @@ class _TimerScreenState extends State<TimerScreen> {
       setState(() {
         _backgroundColor = Color(0xff9F47DE);
         _appBarColor = Color(0xffC795DE);
-        _OnChillMode = false;
+        _onChillMode = false;
       });
     } else {
       _appBarColor = Color(0xffFFB3CB);
       _backgroundColor = Color(0xffDE648A);
-      _OnChillMode = true;
+      _onChillMode = true;
     }
   }
 
@@ -183,11 +181,11 @@ class _TimerScreenState extends State<TimerScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            _OnChillMode ? "Chilling Time" : "Busy",
+            _onChillMode ? "Chilling Time" : "Busy",
             style: TextStyle(
               fontSize: 44,
               fontFamily: "Knewave",
-              color: _OnChillMode ? Color(0xffFFB3CB) : Color(0xffC795DE),
+              color: _onChillMode ? Color(0xffFFB3CB) : Color(0xffC795DE),
             ),
           ),
           const SizedBox(height: 60,),
