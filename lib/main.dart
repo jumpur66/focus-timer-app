@@ -29,8 +29,8 @@ class TimerScreen extends StatefulWidget {
 class _TimerScreenState extends State<TimerScreen> {
   // timer logic
   Timer? _timer;
-  static const int defaultTime = 10;
-  static const int defaultRestTime = 10;
+  static const int defaultTime = 60*25;
+  static const int defaultRestTime = 60*5;
   int _secondsRemaining = defaultTime;
   bool isPause = false;
   String pauseText = "Pause";

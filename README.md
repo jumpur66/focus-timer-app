@@ -1,16 +1,52 @@
-# focus_time
+# Focus Time ⏱️
 
-A new Flutter project.
+A minimalist and aesthetic Pomodoro-style timer app built with Flutter. Focus Time helps you stay productive by alternating between work sessions and rest periods with a playful, high-contrast UI.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Dynamic Timer**: Easily switch between focus and rest modes.
+- **Visual Feedback**: The background and app bar colors change automatically to reflect your current state (Busy vs. Resting).
+- **Audio Notifications**: Plays "cute" custom alerts when a session completes.
+- **Intuitive Controls**: 
+  - **Start**: Begin your focus session.
+  - **Pause/Resume**: Toggle your timer without losing progress.
+  - **Reset**: Return the timer to its default state.
+- **Themed Typography**: Features the bold and stylish *Knewave* font for a unique look.
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: Cross-platform UI framework.
+- **Audioplayers**: For high-quality sound notifications.
+- **Dart Timer**: Precise periodic updates for the countdown logic.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+- `lib/main.dart`: Contains the core application logic, state management, and UI.
+- `assets/sounds/`: Custom MP3 files for session alerts.
+- `assets/fonts/`: Font assets including the *Knewave* family.
+
+## Setup and Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   flutter pub get
+   ```
+
+3. **Assets**: Ensure your `assets` folder contains the following:
+   - `assets/sounds/cute_alarm.mp3`
+   - `assets/sounds/cute_anime_ringtone.mp3`
+   - `assets/fonts/Knewave/Knewave-Regular.ttf`
+
+4. **Run the app**:
+   ```bash
+   flutter run
+   ```
+
+
+## License
+This project is open-source. Feel free to modify and use it as you wish!
