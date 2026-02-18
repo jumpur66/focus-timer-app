@@ -5,8 +5,12 @@ A minimalist and aesthetic Pomodoro-style timer app built with Flutter. Focus Ti
 ## Features
 
 - **Dynamic Timer**: Easily switch between focus and rest modes.
+- **Background Lo-Fi**: Beautiful Lo-Fi playlists that change based on your mode (Work vs. Chill).
+- **Customizable Settings**: Adjust focus/chill durations and music volume through a sleek settings page.
+- **Persistence**: Your preferences are saved automatically using local storage.
 - **Visual Feedback**: The background and app bar colors change automatically to reflect your current state (Busy vs. Resting).
-- **Audio Notifications**: Plays "cute" custom alerts when a session completes.
+- **Audio Notifications**: Plays custom alerts when a session completes.
+- **Screen Awake**: Uses Wakelock to keep your screen on while the timer is running.
 - **Intuitive Controls**: 
   - **Start**: Begin your focus session.
   - **Pause/Resume**: Toggle your timer without losing progress.
@@ -16,14 +20,17 @@ A minimalist and aesthetic Pomodoro-style timer app built with Flutter. Focus Ti
 ## Technologies Used
 
 - **Flutter**: Cross-platform UI framework.
-- **Audioplayers**: For high-quality sound notifications.
-- **Dart Timer**: Precise periodic updates for the countdown logic.
+- **Provider**: For robust state management.
+- **Audioplayers**: For background music and notification sounds.
+- **Shared Preferences**: For persistent settings.
+- **Wakelock Plus**: To keep the screen active.
 
 ## Project Structure
 
-- `lib/main.dart`: Contains the core application logic, state management, and UI.
-- `assets/sounds/`: Custom MP3 files for session alerts.
-- `assets/fonts/`: Font assets including the *Knewave* family.
+- `lib/main.dart`: Entry point and provider initialization.
+- `lib/pages/`: Contains the Timer and Settings screens.
+- `lib/providers/`: State management for Timer settings and Audio.
+- `assets/sounds/`: Playlists for work and chill modes.
 
 ## Setup and Installation
 
@@ -37,16 +44,11 @@ A minimalist and aesthetic Pomodoro-style timer app built with Flutter. Focus Ti
    flutter pub get
    ```
 
-3. **Assets**: Ensure your `assets` folder contains the following:
-   - `assets/sounds/cute_alarm.mp3`
-   - `assets/sounds/cute_anime_ringtone.mp3`
-   - `assets/fonts/Knewave/Knewave-Regular.ttf`
-
-4. **Run the app**:
+3. **Run the app**:
    ```bash
    flutter run
    ```
 
 
 ## License
-This project is open-source. Feel free to modify and use it as you wish!
+This project is restricted to **Personal and Collaborative Use only**. Commercial use is strictly prohibited. See the [LICENSE](LICENSE) file for details.
