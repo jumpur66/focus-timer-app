@@ -40,6 +40,7 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^6.0.0
+  msix: ^3.16.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -89,3 +90,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+msix_config:
+  display_name: Focus Time
+  publisher_display_name: Simo MF
+  identity_name: com.simomf.focustime
+  msix_version: 1.0.0.0
+  logo_path: assets/logo.png
+  capabilities: internetClient
+  install_on_launch: true
