@@ -99,3 +99,5 @@ msix_config:
   logo_path: assets/logo.png
   capabilities: internetClient
   install_on_launch: true
+  install_certificate: false
+
