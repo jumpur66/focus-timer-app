@@ -17,7 +17,6 @@ A minimalist and aesthetic Pomodoro-style timer app built with Flutter. Focus Ti
 - **Themed Typography**: Features the bold and stylish *Knewave* font for a unique look.
 
 ## Technologies Used
-
 - **Flutter**: Cross-platform UI framework.
 - **Provider**: For robust state management.
 - **Audioplayers**: For background music and notification sounds.
