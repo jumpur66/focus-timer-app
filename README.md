@@ -3,7 +3,6 @@
 A minimalist and aesthetic Pomodoro-style timer app built with Flutter. Focus Time helps you stay productive by alternating between work sessions and rest periods with a playful, high-contrast UI.
 
 ## Features
-
 - **Dynamic Timer**: Easily switch between focus and rest modes.
 - **Background Lo-Fi**: Beautiful Lo-Fi playlists that change based on your mode (Work vs. Chill).
 - **Customizable Settings**: Adjust focus/chill durations and music volume through a sleek settings page.
