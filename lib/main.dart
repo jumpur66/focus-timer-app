@@ -5,7 +5,7 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 
 import 'providers/audio_provider.dart';
 import 'providers/settings_provider.dart';
-import 'pages/timer.dart';
+import 'pages/splash.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const TimerScreen(),
+      home: const SplashScreen(),
     );
   }
 }
